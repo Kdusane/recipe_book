@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page testing </title>
+    <link rel="stylesheet" href="css/mainpage_style.css">
+</head>
+<body>
+    <section class="header1 ">
+        <h1 class="h_1">Indian Reciepes Book</h1>
+        
+      </section>
+      <div class="topnav" style="background-color: #42455a; border: 5px;">
+        <a class="active" href="#home">Home</a>
+        <a href="file:///C:/Users/user/Desktop/project_main/joinus.html">Join us</a>
+        <a href="file:///C:/Users/user/Desktop/project_main/aboutus_testing.html">About us</a>
+      </div>
+      <section>
+        <div class="container reveal">
+          <h2 class="h_2">Non Veg Dishes</h2>
+          <div class="text-container">
+            <div  class="text-box">
+                <div class="oncontainer">
+                    <img src="images/biryani.jpg" alt="Avatar" class="image1" style="width:400px;">
+                    <div class="middle">
+                     <button class="btn1" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/recipe_testing.html';"> Briyani</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="text-box">
+                <div class="oncontainer">
+                  <img src="images/chicken_curry.jpg" alt="Avatar" class="image1" style="width:400px;">
+                  <div class="middle1">
+                   <button class="btn2" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/muttoncurry.html';"> Muttoon Curry</button>
+                  </div>
+                </div>
+            </div>
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="images/fish_fry.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle2">
+                 <button class="btn2" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Fish Fry</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      
+      <section>
+        <div class="container reveal">
+          <h2 class="h_2">Veg Dishes</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="images/panner_Masala.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Paneer Masala</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="images/dal_makhni.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle1">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Dal Makhni</button>
+                </div>
+              </div>
+             
+            </div>
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="images/malai_kofta.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle2">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Malai Kofta </button>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container reveal">
+          <h2 style="color: #e0ffff;"class="h3">Indian Desserts</h2>
+          <div class="text-container">
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="../web basis training/images/gulab_jamun.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Gulab Jamun</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="../web basis training/images/rasgulla.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle5">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Rasgulla</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-box">
+              <div class="oncontainer">
+                <img src="../web basis training/images/rabdi.jpg" alt="Avatar" class="image1" style="width:400px;">
+                <div class="middle6">
+                 <button class="btn_veg" type="button" onclick="window.location.href='file:///C:/Users/user/Desktop/web%20basis%20training/Project/aboutus_testing.html';"> Rabdi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script >function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);</script>
+    
+</body>
+</html>
